@@ -24,6 +24,8 @@ class RegistrationTableVC: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-
+    @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem) {
+    }
+    
 
 }

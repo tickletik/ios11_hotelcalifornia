@@ -37,6 +37,15 @@ class RegistrationTableVC: UITableViewController {
     }
 
     
+    func updateDateViews() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        
+        checkInDateLabel.text = dateFormatter.string(from: checkInDatePicker.date)
+        checkOutDateLabel.text = dateFormatter.string(from: checkOutDatePicker.date)
+    }
+    
+    
     @IBAction func doneButtonAction(_ sender: UIBarButtonItem) {
         let firstName = firstNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""
@@ -48,13 +57,10 @@ class RegistrationTableVC: UITableViewController {
         print("email: \(email)")
     }
     
-    func udpateDateViews() {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        
-        checkInDateLabel.text = dateFormatter.string(from: checkInDatePicker.date)
-        checkOutDateLabel.text = dateFormatter.string(from: checkOutDatePicker.date)
+    @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
+        updateDateViews()
     }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

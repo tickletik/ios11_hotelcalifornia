@@ -90,6 +90,9 @@ class RegistrationTableVC: UITableViewController {
         let checkInDate = checkInDatePicker.date
         let checkOutDate = checkOutDatePicker.date
         
+        let numberOfAdults = Int(numberOfAdultsStepper.value)
+        let numberOfChildren = Int(numberOfChildrenStepper.value)
+        
         print("DONE TAPPED")
         print("firstName: \(firstName)")
         print("lastName: \(lastName)")
@@ -97,6 +100,9 @@ class RegistrationTableVC: UITableViewController {
         
         print("checkIn: \(checkInDate)")
         print("checkOut: \(checkOutDate)")
+        
+        print("numberOfAdults: \(numberOfAdults)")
+        print("numberOfChildren: \(numberOfChildren)")
     }
     
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {

@@ -42,6 +42,13 @@ class RegistrationTableVC: UITableViewController {
         print("email: \(email)")
     }
     
+    func udpateDateViews() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        
+        checkInDateLabel.text = dateFormatter.string(from: checkInDatePicker.date)
+        checkOutDateLabel.text = dateFormatter.string(from: checkOutDatePicker.date)
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

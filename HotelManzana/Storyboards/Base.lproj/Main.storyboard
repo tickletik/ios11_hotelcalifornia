@@ -293,6 +293,31 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="04S-IT-iVD" id="H83-JS-8ux">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WiFi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTV-9H-MPt">
+                                                    <rect key="frame" x="24" y="12" width="33" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zuf-7v-eJU">
+                                                    <rect key="frame" x="310" y="7" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOC-uP-DcL">
+                                                    <rect key="frame" x="261" y="12" width="33" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Zuf-7v-eJU" firstAttribute="leading" secondItem="dOC-uP-DcL" secondAttribute="trailing" constant="16" id="2Eb-m3-Wu1"/>
+                                                <constraint firstItem="gTV-9H-MPt" firstAttribute="centerY" secondItem="H83-JS-8ux" secondAttribute="centerY" id="Qaw-Z3-UQO"/>
+                                                <constraint firstItem="gTV-9H-MPt" firstAttribute="leading" secondItem="H83-JS-8ux" secondAttribute="leadingMargin" constant="16" id="QmW-PA-6eq"/>
+                                                <constraint firstAttribute="trailing" secondItem="Zuf-7v-eJU" secondAttribute="trailing" constant="16" id="pe9-TZ-2gC"/>
+                                                <constraint firstItem="Zuf-7v-eJU" firstAttribute="centerY" secondItem="dOC-uP-DcL" secondAttribute="centerY" id="phf-G9-p4O"/>
+                                                <constraint firstItem="dOC-uP-DcL" firstAttribute="centerY" secondItem="gTV-9H-MPt" secondAttribute="centerY" id="qXL-iF-Vtc"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>

@@ -20,6 +20,28 @@ class RegistrationTableVC: UITableViewController {
     @IBOutlet weak var checkOutDateLabel: UILabel!
     @IBOutlet weak var checkOutDatePicker: UIDatePicker!
     
+    // variables to keep track of view state
+    let checkInDatePickerCellIndexPath = IndexPath(row: 1, section: 1)
+    let checkOutDatePickerCellIndexPath = IndexPath(row: 3, section: 1)
+    
+    /*
+        in the following two variables, isCheckOutDatePickerShown and isCheckInDatePickerShown,
+     
+     if the variable are set to true, ie isShown is true
+        then isHidden is false, and vice versa
+    */
+    var isCheckInDatePickerShown: Bool = false {
+        didSet {
+            checkInDatePicker.isHidden = !isCheckInDatePickerShown
+        }
+    }
+    
+    var isCheckOutDatePickerShown: Bool = false {
+        didSet {
+            checkOutDatePicker.isHidden = !isCheckOutDatePickerShown
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

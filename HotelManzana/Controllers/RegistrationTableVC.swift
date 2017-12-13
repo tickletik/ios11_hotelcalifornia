@@ -89,8 +89,27 @@ class RegistrationTableVC: UITableViewController {
         updateDateViews()
     }
     
+    /*
+        check if the selected row is either of the datepickers, if so, return a height of 216,
+        otherwise, return the default height of 44
+    */
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        <#code#>
+        switch (indexPath.section, indexPath.row) {
+        case (checkInDatePickerCellIndexPath.section, checkInDatePickerCellIndexPath.row):
+            if isCheckInDatePickerShown {
+                return 216.0
+            } else {
+                return 0
+            }
+        case (checkOutDatePickerCellIndexPath.section, checkOutDatePickerCellIndexPath.row):
+            if isCheckOutDatePickerShown {
+                return 216.0
+            } else {
+                return 0
+            }
+        default:
+            return 44.0
+        }
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

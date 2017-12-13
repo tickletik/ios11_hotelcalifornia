@@ -25,6 +25,13 @@ class RegistrationTableVC: UITableViewController {
     }
 
     @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem) {
+        let firstName = firstNameTextField.text ?? ""
+        let lastName = lastNameTextField.text ?? ""
+        let email = emailTextField.text ?? ""
+        
+        print("first name: \(firstName)")
+        print("last name: \(lastName)")
+        print("email: \(email)")
     }
     
 

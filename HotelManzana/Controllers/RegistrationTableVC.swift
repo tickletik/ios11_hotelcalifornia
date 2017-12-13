@@ -64,6 +64,8 @@ class RegistrationTableVC: UITableViewController {
         checkInDatePicker.date = midnightToday
         
         checkOutDatePicker.minimumDate = checkInDatePicker.date.addingTimeInterval(86400)
+        
+        updateNumberOfGuests()
     }
 
     
@@ -100,6 +102,11 @@ class RegistrationTableVC: UITableViewController {
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
         updateDateViews()
     }
+    
+    @IBAction func stepperChanged(_ sender: UIStepper) {
+        updateNumberOfGuests()
+    }
+    
     
     /*
         check if the selected row is either of the datepickers, if so, return a height of 216,

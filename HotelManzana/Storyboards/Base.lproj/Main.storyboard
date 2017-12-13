@@ -232,6 +232,9 @@
                                                 </label>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="o4i-tm-WhW">
                                                     <rect key="frame" x="265" y="7.5" width="94" height="29"/>
+                                                    <connections>
+                                                        <action selector="stepperChanged:" destination="A8S-AM-6Zb" eventType="valueChanged" id="AhA-Tm-QhF"/>
+                                                    </connections>
                                                 </stepper>
                                             </subviews>
                                             <constraints>
@@ -265,6 +268,9 @@
                                                 </label>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ce1-Ki-dLQ">
                                                     <rect key="frame" x="265" y="7.5" width="94" height="29"/>
+                                                    <connections>
+                                                        <action selector="stepperChanged:" destination="A8S-AM-6Zb" eventType="valueChanged" id="Kkg-xA-urM"/>
+                                                    </connections>
                                                 </stepper>
                                             </subviews>
                                             <constraints>

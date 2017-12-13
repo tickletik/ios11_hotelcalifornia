@@ -94,6 +94,8 @@ class RegistrationTableVC: UITableViewController {
         let numberOfAdults = Int(numberOfAdultsStepper.value)
         let numberOfChildren = Int(numberOfChildrenStepper.value)
         
+        let hasWifi = wifiSwitch.isOn
+        
         print("DONE TAPPED")
         print("firstName: \(firstName)")
         print("lastName: \(lastName)")
@@ -104,6 +106,8 @@ class RegistrationTableVC: UITableViewController {
         
         print("numberOfAdults: \(numberOfAdults)")
         print("numberOfChildren: \(numberOfChildren)")
+        
+        print("wifi: \(hasWifi)")
     }
     
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {

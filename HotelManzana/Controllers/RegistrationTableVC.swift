@@ -14,6 +14,12 @@ class RegistrationTableVC: UITableViewController {
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
+    
+    @IBOutlet weak var checkInDateLabel: UILabel!
+    @IBOutlet weak var checkInDatePicker: UIDatePicker!
+    @IBOutlet weak var checkOutDateLabel: UIView!
+    @IBOutlet weak var checkOutDatePicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

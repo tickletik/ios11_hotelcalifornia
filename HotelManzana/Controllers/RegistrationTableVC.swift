@@ -14,10 +14,9 @@ class RegistrationTableVC: UITableViewController {
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
-    
     @IBOutlet weak var checkInDateLabel: UILabel!
     @IBOutlet weak var checkInDatePicker: UIDatePicker!
-    @IBOutlet weak var checkOutDateLabel: UIView!
+    @IBOutlet weak var checkOutDateLabel: UILabel!
     @IBOutlet weak var checkOutDatePicker: UIDatePicker!
     
     override func viewDidLoad() {
@@ -30,6 +29,15 @@ class RegistrationTableVC: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    func updateDateViews() {
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.dateStyle = .medium
+        
+        checkInDateLabel.text = dateFormatter.string(from: checkInDatePicker.date)
+        checkOutDateLabel.text = dateFormatter.string(from: checkOutDatePicker.date)
+    }
+    
     @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem) {
         let firstName = firstNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""

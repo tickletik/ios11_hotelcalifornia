@@ -62,6 +62,18 @@ class RegistrationTableVC: UITableViewController {
         checkOutDateLabel.text = dateFormatter.string(from: checkOutDatePicker.date)
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch(indexPath.section, indexPath.row) {
+            
+        case (checkInDatePickerIndexPath.section, checkInDatePickerIndexPath.row):
+            return 0
+        case (checkOutDatePickerIndexPath.section, checkOutDatePickerIndexPath.row):
+            return 0
+        default:
+            return 44.0
+        }
+    }
+    
     @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem) {
         let firstName = firstNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""

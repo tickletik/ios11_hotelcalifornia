@@ -12,7 +12,7 @@
         <!--Root View Controller-->
         <scene sceneID="L5G-xB-GAd">
             <objects>
-                <tableViewController id="A8S-AM-6Zb" sceneMemberID="viewController">
+                <tableViewController id="A8S-AM-6Zb" customClass="RegistrationTableVC" customModule="HotelManzana" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="fEr-aO-1Kl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,6 +143,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="3SE-nf-asE"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="1ea-GQ-Y5e" id="7MM-bX-1UJ"/>
+                        <outlet property="firstNameTextField" destination="VY0-ny-0Od" id="xNv-6d-pWh"/>
+                        <outlet property="lastNameTextField" destination="1Jh-yc-xek" id="h29-DJ-diu"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0W-NR-ptl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

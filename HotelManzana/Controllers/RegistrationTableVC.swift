@@ -26,11 +26,18 @@ class RegistrationTableVC: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func doneButtonAction(_ sender: UIBarButtonItem) {
+        let firstName = firstNameTextField.text ?? ""
+        let lastName = lastNameTextField.text ?? ""
+        let email = emailTextField.text ?? ""
+        
+        print("DONE TAPPED")
+        print("firstName: \(firstName)")
+        print("lastName: \(lastName)")
+        print("email: \(email)")
     }
-
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

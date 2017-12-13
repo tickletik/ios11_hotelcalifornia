@@ -35,12 +35,14 @@ class RegistrationTableVC: UITableViewController {
         
         checkOutDatePicker.minimumDate = checkInDatePicker.date.addingTimeInterval(86400)
         
+        updateDateViews()
     }
 
     func updateDateViews() {
         let dateFormatter = DateFormatter()
         
         dateFormatter.dateStyle = .medium
+        
         
         checkInDateLabel.text = dateFormatter.string(from: checkInDatePicker.date)
         checkOutDateLabel.text = dateFormatter.string(from: checkOutDatePicker.date)
@@ -56,5 +58,10 @@ class RegistrationTableVC: UITableViewController {
         print("email: \(email)")
     }
     
-
+    @IBAction func datePickerChanged(_ sender: UIDatePicker) {
+        
+        checkOutDatePicker.minimumDate = checkInDatePicker.date.addingTimeInterval(86400)
+        updateDateViews()
+    }
+    
 }

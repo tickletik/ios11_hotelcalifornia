@@ -19,6 +19,20 @@ class RegistrationTableVC: UITableViewController {
     @IBOutlet weak var checkOutDateLabel: UILabel!
     @IBOutlet weak var checkOutDatePicker: UIDatePicker!
     
+    let checkInDatePickerIndexPath = IndexPath(row: 1, section: 1)
+    let checkOutDatePickerIndexPath = IndexPath(row: 3, section: 1)
+    
+    var isCheckInDatePickerShown: Bool = false {
+        didSet {
+            checkInDatePicker.isHidden = !isCheckInDatePickerShown
+        }
+    }
+    
+    var isCheckOutDatePickerShown: Bool = false {
+        didSet {
+            checkOutDatePicker.isHidden = !isCheckOutDatePickerShown
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,9 +67,15 @@ class RegistrationTableVC: UITableViewController {
         let lastName = lastNameTextField.text ?? ""
         let email = emailTextField.text ?? ""
         
+        let checkInDate = checkInDatePicker.date
+        let checkOutDate = checkOutDatePicker.date
+        
         print("first name: \(firstName)")
         print("last name: \(lastName)")
         print("email: \(email)")
+        
+        print("check in date: \(checkInDate)")
+        print("check out date: \(checkOutDate)")
     }
     
     @IBAction func datePickerChanged(_ sender: UIDatePicker) {

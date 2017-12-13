@@ -67,8 +67,15 @@ class RegistrationTableVC: UITableViewController {
         updateDateViews()
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        <#code#>
+    }
 
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
+    }
+    
+    
     /*
     // MARK: - Navigation
 

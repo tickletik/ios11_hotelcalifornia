@@ -324,6 +324,10 @@
                         <outlet property="emailTextField" destination="1ea-GQ-Y5e" id="7MM-bX-1UJ"/>
                         <outlet property="firstNameTextField" destination="VY0-ny-0Od" id="xNv-6d-pWh"/>
                         <outlet property="lastNameTextField" destination="1Jh-yc-xek" id="h29-DJ-diu"/>
+                        <outlet property="numberOfAdultsLabel" destination="5f7-DE-D3Y" id="ZoT-k3-lf3"/>
+                        <outlet property="numberOfAdultsStepper" destination="o4i-tm-WhW" id="djl-Wg-1Fc"/>
+                        <outlet property="numberOfChildrenLabel" destination="PW9-gV-6V8" id="Vbe-5O-HEo"/>
+                        <outlet property="numberOfChildrenStepper" destination="ce1-Ki-dLQ" id="2t6-4C-efh"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0W-NR-ptl" userLabel="First Responder" sceneMemberID="firstResponder"/>

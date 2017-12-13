@@ -254,7 +254,7 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="3SE-nf-asE">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="iTu-Kh-pjy">
                             <connections>
-                                <action selector="doneButtonAction:" destination="A8S-AM-6Zb" id="gcK-eK-wsJ"/>
+                                <action selector="doneBarButtonTapped:" destination="A8S-AM-6Zb" id="gcK-eK-wsJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

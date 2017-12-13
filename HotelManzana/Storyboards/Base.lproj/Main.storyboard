@@ -101,7 +101,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IiZ-SX-N01">
                                                     <rect key="frame" x="16" y="11" width="343" height="22"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Check-In Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaX-Ac-LVS">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Check-In Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaX-Ac-LVS" userLabel="CheckIn title">
                                                             <rect key="frame" x="0.0" y="0.0" width="242" height="22"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -156,7 +156,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uq-nL-N6e">
                                                     <rect key="frame" x="16" y="11" width="343" height="22"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Check-Out Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54Z-79-CPY">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Check-Out Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54Z-79-CPY" userLabel="CheckOut title">
                                                             <rect key="frame" x="0.0" y="0.0" width="242" height="22"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -253,6 +253,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="checkInDateLabel" destination="XcY-U2-tz4" id="ULf-rG-f3a"/>
+                        <outlet property="checkInDatePicker" destination="5gl-SI-kal" id="uLD-ah-JJQ"/>
+                        <outlet property="checkOutDateLabel" destination="RUn-8l-BYo" id="7QN-88-sh0"/>
+                        <outlet property="checkOutDatePicker" destination="VSP-lP-TNN" id="fK9-Sf-mP7"/>
                         <outlet property="emailTextField" destination="1ea-GQ-Y5e" id="7MM-bX-1UJ"/>
                         <outlet property="firstNameTextField" destination="VY0-ny-0Od" id="xNv-6d-pWh"/>
                         <outlet property="lastNameTextField" destination="1Jh-yc-xek" id="h29-DJ-diu"/>

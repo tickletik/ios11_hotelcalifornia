@@ -74,6 +74,25 @@ class RegistrationTableVC: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        switch(indexPath.section, indexPath.row) {
+        case (checkInDatePickerIndexPath.section, checkOutDatePickerIndexPath.row - 1):
+            if isCheckInDatePickerShown {
+                isCheckInDatePickerShown = false
+            } else if isCheckOutDatePickerShown {
+                isCheckOutDatePickerShown = false
+                isCheckInDatePickerShown = true
+            }
+            else {
+                isCheckInDatePickerShown = true
+            }
+        default:
+            break
+        }
+    }
+    
     @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem) {
         let firstName = firstNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""

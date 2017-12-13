@@ -26,6 +26,7 @@ class RegistrationTableVC: UITableViewController {
     @IBOutlet weak var numberOfChildrenLabel: UILabel!
     @IBOutlet weak var numberOfChildrenStepper: UIStepper!
     
+    @IBOutlet weak var wifiSwitch: UISwitch!
     
     
     // variables to keep track of view state
@@ -113,6 +114,8 @@ class RegistrationTableVC: UITableViewController {
         updateNumberOfGuests()
     }
     
+    @IBAction func wifiSwitchChanged(_ sender: UISwitch) {
+    }
     
     /*
         check if the selected row is either of the datepickers, if so, return a height of 216,

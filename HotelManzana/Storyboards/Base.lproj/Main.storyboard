@@ -302,6 +302,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zuf-7v-eJU">
                                                     <rect key="frame" x="310" y="7" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="wifiSwitchChanged:" destination="A8S-AM-6Zb" eventType="valueChanged" id="OcI-Ra-u9C"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOC-uP-DcL">
                                                     <rect key="frame" x="261" y="12" width="33" height="21"/>
@@ -359,6 +362,7 @@
                         <outlet property="numberOfAdultsStepper" destination="o4i-tm-WhW" id="djl-Wg-1Fc"/>
                         <outlet property="numberOfChildrenLabel" destination="PW9-gV-6V8" id="Vbe-5O-HEo"/>
                         <outlet property="numberOfChildrenStepper" destination="ce1-Ki-dLQ" id="2t6-4C-efh"/>
+                        <outlet property="wifiSwitch" destination="Zuf-7v-eJU" id="lEX-fD-Rne"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0W-NR-ptl" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -41,6 +41,13 @@ class SelectRoomTypeTableVC: UITableViewController {
         
         cell.detailTextLabel?.text = "$ \(roomType.price)"
         
+        // check whatever room currently exists
+        if roomType == self.roomType {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
+        
         return cell
     }
     

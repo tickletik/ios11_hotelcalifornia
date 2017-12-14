@@ -24,6 +24,9 @@ class RegistrationTableVC: UITableViewController {
     @IBOutlet weak var numberOfChildrenLabel: UILabel!
     @IBOutlet weak var numberOfChildrenStepper: UIStepper!
     
+    @IBOutlet weak var wifiSwitch: NSLayoutConstraint!
+    
+    
     let checkInDatePickerIndexPath = IndexPath(row: 1, section: 1)
     let checkOutDatePickerIndexPath = IndexPath(row: 3, section: 1)
     
@@ -153,7 +156,9 @@ class RegistrationTableVC: UITableViewController {
         print("check out date: \(checkOutDate)")
         
         print("number of adults: \(numberOfAdults)")
-        print("number of children: \(numberOfChildren)")
+        print("number of children: \(String(describing: numberOfChildren))")
+        
+        print("wifi on/off: \(wifiSwitch.isActive)")
     }
     
     @IBAction func datePickerChanged(_ sender: UIDatePicker) {
@@ -166,5 +171,7 @@ class RegistrationTableVC: UITableViewController {
         updateNumberOfGuests()
     }
     
+    @IBAction func wifiSwitchAction(_ sender: UISwitch) {
+    }
     
 }

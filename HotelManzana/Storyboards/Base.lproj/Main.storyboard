@@ -210,6 +210,9 @@
                                             <subviews>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="jha-MT-8ur">
                                                     <rect key="frame" x="273" y="8" width="94" height="29"/>
+                                                    <connections>
+                                                        <action selector="stepperChanged:" destination="vJV-vq-eGj" eventType="valueChanged" id="za8-Jz-2y9"/>
+                                                    </connections>
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adults" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3U7-DM-BDF">
                                                     <rect key="frame" x="24" y="12" width="48.5" height="21"/>
@@ -243,6 +246,9 @@
                                             <subviews>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zFD-nf-PU7">
                                                     <rect key="frame" x="273" y="7" width="94" height="29"/>
+                                                    <connections>
+                                                        <action selector="stepperChanged:" destination="vJV-vq-eGj" eventType="valueChanged" id="M5S-Ha-FKe"/>
+                                                    </connections>
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Children" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbx-T9-Rnw">
                                                     <rect key="frame" x="24" y="11" width="64" height="21"/>

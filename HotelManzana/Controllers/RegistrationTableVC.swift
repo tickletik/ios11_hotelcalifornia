@@ -155,4 +155,9 @@ class RegistrationTableVC: UITableViewController {
         updateDateViews()
     }
     
+    @IBAction func stepperChanged(_ sender: UIStepper) {
+        updateNumberOfGuests()
+    }
+    
+    
 }

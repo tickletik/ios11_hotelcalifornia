@@ -142,12 +142,18 @@ class RegistrationTableVC: UITableViewController {
         let checkInDate = checkInDatePicker.date
         let checkOutDate = checkOutDatePicker.date
         
+        let numberOfAdults = numberOfAdultsLabel.text
+        let numberOfChildren = numberOfChildrenLabel.text
+        
         print("first name: \(firstName)")
         print("last name: \(lastName)")
         print("email: \(email)")
         
         print("check in date: \(checkInDate)")
         print("check out date: \(checkOutDate)")
+        
+        print("number of adults: \(numberOfAdults)")
+        print("number of children: \(numberOfChildren)")
     }
     
     @IBAction func datePickerChanged(_ sender: UIDatePicker) {

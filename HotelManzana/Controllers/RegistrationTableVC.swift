@@ -55,6 +55,7 @@ class RegistrationTableVC: UITableViewController {
         checkOutDatePicker.minimumDate = checkInDatePicker.date.addingTimeInterval(86400)
         
         updateDateViews()
+        updateNumberOfGuests()
     }
 
     func updateDateViews() {

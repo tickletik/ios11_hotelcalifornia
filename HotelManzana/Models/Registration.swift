@@ -29,6 +29,13 @@ struct RoomType: Equatable {
     var shortName: String
     
     var price: Int
+    
+    static var all: [RoomType] {
+        return [
+            RoomType(id: 0, name: "Two Queens", shortName: "2Q", price: 159),
+            RoomType(id: 1, name: "Motorcycle Man Room", shortName: "mmr", price: 216),
+            RoomType(id: 2, name: "Pink Lady", shortName: "PL", price: 328)]
+    }
 }
 
 // Equatable Protocol Implementation for RoomType

@@ -192,4 +192,14 @@ class RegistrationTableVC: UITableViewController, SelectRoomTypeDelegate {
     @IBAction func wifiSwitchAction(_ sender: UISwitch) {
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SelectRoomType" {
+            if let destination = segue.destination as? SelectRoomTypeVC {
+               
+                destination.delegate = self
+                destination.roomType = roomType
+            }
+        }
+    }
 }

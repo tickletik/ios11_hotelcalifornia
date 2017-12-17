@@ -70,8 +70,17 @@ class RegistrationTableVC: UITableViewController {
         checkOutDatePicker.minimumDate = checkInDatePicker.date.addingTimeInterval(86400)
         
         updateNumberOfGuests()
+        
+        updateRoomType()
     }
 
+    func updateRoomType() {
+        if let roomType = roomType {
+            roomTypeLabel.text = roomType.name
+        } else {
+            roomTypeLabel.text = "Not Set"
+        }
+    }
     
     func updateDateViews() {
         let dateFormatter = DateFormatter()

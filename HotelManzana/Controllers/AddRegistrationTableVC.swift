@@ -1,5 +1,5 @@
 //
-//  RegistrationTableVC.swift
+//  AddRegistrationTableVC.swift
 //  HotelManzana
 //
 //  Created by ronny abraham on 12/13/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegistrationTableVC: UITableViewController, SelectRoomTypeTableViewControllerDelegate {
+class AddRegistrationTableVC: UITableViewController, SelectRoomTypeTableViewControllerDelegate {
 
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!

@@ -42,7 +42,6 @@
 		E35B775C1FE1213F00E6BBFC = {
 			isa = PBXGroup;
 			children = (
-				E3DA9E3D1FE6974D004E071C /* SelectRoomTypeVC.swift */,
 				E35B77671FE1213F00E6BBFC /* HotelManzana */,
 				E35B77661FE1213F00E6BBFC /* Products */,
 			);
@@ -80,6 +79,7 @@
 		E35B777D1FE1217100E6BBFC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E3DA9E3D1FE6974D004E071C /* SelectRoomTypeVC.swift */,
 				E35B77831FE152E400E6BBFC /* RegistrationTableVC.swift */,
 			);
 			path = Controllers;

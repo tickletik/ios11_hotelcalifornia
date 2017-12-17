@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegistrationTableVC: UITableViewController {
+class RegistrationTableVC: UITableViewController, SelectRoomTypeTableViewControllerDelegate {
 
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -73,6 +73,14 @@ class RegistrationTableVC: UITableViewController {
         
         updateRoomType()
     }
+
+    // protocol stub for SelectRoomTypeTableViewControllerDelegate
+    // (custom delegate)
+    func didSelect(roomType: RoomType) {
+        self.roomType = roomType
+        updateRoomType()
+    }
+    
 
     func updateRoomType() {
         if let roomType = roomType {

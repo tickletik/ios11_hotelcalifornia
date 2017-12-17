@@ -8,9 +8,14 @@
 
 import UIKit
 
+protocol SelectRoomTypeDelegate {
+    func didSelect(roomType: RoomType)
+}
+
 class SelectRoomTypeVC: UITableViewController {
     
     var roomType: RoomType?
+    var delegate: SelectRoomTypeDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +60,7 @@ class SelectRoomTypeVC: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
         roomType = RoomType.all[indexPath.row]
+        delegate?.didSelect(roomType: roomType!)
         
         tableView.reloadData()
     }

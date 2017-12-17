@@ -9,6 +9,8 @@
 import UIKit
 
 class SelectRoomTypeVC: UITableViewController {
+    
+    var roomType: RoomType?
 
     override func viewDidLoad() {
         super.viewDidLoad()

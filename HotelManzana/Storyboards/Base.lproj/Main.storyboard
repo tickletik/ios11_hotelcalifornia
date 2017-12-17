@@ -317,12 +317,28 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Section-5" id="8bW-gC-kmy">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="9fg-hW-rQH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="G2R-Kf-WB3" detailTextLabel="Gga-C8-BzY" style="IBUITableViewCellStyleValue1" id="9fg-hW-rQH">
                                         <rect key="frame" x="0.0" y="1063.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fg-hW-rQH" id="Gky-Uv-3yk">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Room Choice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G2R-Kf-WB3">
+                                                    <rect key="frame" x="16" y="12" width="102" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gga-C8-BzY">
+                                                    <rect key="frame" x="315" y="12" width="44" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -352,6 +368,7 @@
                         <outlet property="numberOfAdultsStepper" destination="jha-MT-8ur" id="9Ve-3T-iBl"/>
                         <outlet property="numberOfChildrenLabel" destination="Hex-vq-cuB" id="yT8-bg-Cxt"/>
                         <outlet property="numberOfChildrenStepper" destination="zFD-nf-PU7" id="DyQ-Dh-bca"/>
+                        <outlet property="roomTypeLabel" destination="Gga-C8-BzY" id="LZ5-G5-zk7"/>
                         <outlet property="wifiSwitch" destination="upQ-SP-29T" id="MOI-ho-hBa"/>
                     </connections>
                 </tableViewController>

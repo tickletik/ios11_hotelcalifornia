@@ -8,7 +8,14 @@
 
 import UIKit
 
-class RegistrationTableVC: UITableViewController {
+class RegistrationTableVC: UITableViewController, SelectRoomTypeDelegate {
+    
+    
+    func didSelect(roomType: RoomType) {
+        self.roomType = roomType
+        updateRoomType()
+    }
+    
 
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -26,6 +33,9 @@ class RegistrationTableVC: UITableViewController {
     
     @IBOutlet weak var wifiSwitch: NSLayoutConstraint!
     
+    @IBOutlet weak var roomTypeLabel: UILabel!
+    
+    var roomType: RoomType?
     
     let checkInDatePickerIndexPath = IndexPath(row: 1, section: 1)
     let checkOutDatePickerIndexPath = IndexPath(row: 3, section: 1)
@@ -59,6 +69,7 @@ class RegistrationTableVC: UITableViewController {
         
         updateDateViews()
         updateNumberOfGuests()
+        updateRoomType()
     }
 
     func updateDateViews() {
@@ -77,6 +88,13 @@ class RegistrationTableVC: UITableViewController {
         numberOfChildrenLabel.text = "\(Int(numberOfChildrenStepper.value))"
     }
     
+    func updateRoomType() {
+        if let roomType = roomType {
+            roomTypeLabel.text = roomType.name
+        } else {
+            roomTypeLabel.text = "Not Set"
+        }
+    }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         switch(indexPath.section, indexPath.row) {

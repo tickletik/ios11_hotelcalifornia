@@ -63,7 +63,7 @@ class SelectRoomTypeTableVC: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         roomType = RoomType.all[indexPath.row]
         
-        delegate?.didSelect(roomType: roomType)
+        delegate?.didSelect(roomType: roomType!)
         tableView.reloadData()
     }
     /*

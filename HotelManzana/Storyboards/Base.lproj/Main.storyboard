@@ -378,6 +378,7 @@
                         <outlet property="numberOfAdultsStepper" destination="o4i-tm-WhW" id="djl-Wg-1Fc"/>
                         <outlet property="numberOfChildrenLabel" destination="PW9-gV-6V8" id="Vbe-5O-HEo"/>
                         <outlet property="numberOfChildrenStepper" destination="ce1-Ki-dLQ" id="2t6-4C-efh"/>
+                        <outlet property="roomTypeLabel" destination="aFI-wj-ROH" id="fCr-OH-P2D"/>
                         <outlet property="wifiSwitch" destination="Zuf-7v-eJU" id="lEX-fD-Rne"/>
                     </connections>
                 </tableViewController>

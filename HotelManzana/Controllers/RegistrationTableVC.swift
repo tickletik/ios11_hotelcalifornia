@@ -28,6 +28,9 @@ class RegistrationTableVC: UITableViewController {
     
     @IBOutlet weak var wifiSwitch: UISwitch!
     
+    @IBOutlet weak var roomTypeLabel: UILabel!
+    
+    var roomType: RoomType?
     
     // variables to keep track of view state
     let checkInDatePickerCellIndexPath = IndexPath(row: 1, section: 1)

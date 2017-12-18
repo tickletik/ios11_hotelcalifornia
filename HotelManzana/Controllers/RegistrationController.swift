@@ -10,6 +10,8 @@ import UIKit
 
 class RegistrationController: UITableViewController {
 
+    var registrations: [Registration] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,32 +22,33 @@ class RegistrationController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return registrations.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RegistrationCell", for: indexPath)
 
-        // Configure the cell...
-
+        let registration = registrations[indexPath.row]
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        
+        cell.textLabel?.text = registration.firstName + " " + registration.lastName
+        cell.detailTextLabel?.text = dateFormatter.string(from: registration.checkInDate) +  " - " + dateFormatter.string(from: registration.checkOutDate) + ": " + registration.roomType.name
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

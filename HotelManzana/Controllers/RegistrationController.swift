@@ -35,10 +35,16 @@ class RegistrationController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RegistrationCell", for: indexPath)
 
-        // Configure the cell...
-
+        let registration = registrations[indexPath.row]
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        
+        cell.textLabel?.text = registration.firstName + " " + registration.lastName
+        cell.detailTextLabel?.text = dateFormatter.string(from: registration.checkInDate) + " - " + dateFormatter.string(from: registration.checkOutDate) + ": " + registration.roomType.name
+        
         return cell
     }
 

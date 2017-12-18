@@ -10,6 +10,21 @@ import UIKit
 
 class AddRegistrationTableVC: UITableViewController, SelectRoomTypeDelegate {
     
+    var registration:Registration? {
+        guard let roomType = roomType else { return nil }
+        
+        let firstName = firstNameTextField.text ?? ""
+        let lastName = lastNameTextField.text ?? ""
+        let email = emailTextField.text ?? ""
+        let checkInDate = checkInDatePicker.date
+        let checkOutDate = checkOutDatePicker.date
+        
+        let numberOfAdults = Int(numberOfAdultsStepper.value)
+        let numberOfChildren = Int(numberOfChildrenStepper.value)
+        let hasWifi = wifiSwitch.isOn
+        
+        return Registration(firstName: firstName, lastName: lastName, emailAddress: email, checkInDate: checkInDate, checkOutDate: checkOutDate, numberOfAdults: numberOfAdults, numberOfChildren: numberOfChildren, roomType: roomType, wifi: hasWifi)
+    }
     
     func didSelect(roomType: RoomType) {
         self.roomType = roomType
@@ -31,7 +46,7 @@ class AddRegistrationTableVC: UITableViewController, SelectRoomTypeDelegate {
     @IBOutlet weak var numberOfChildrenLabel: UILabel!
     @IBOutlet weak var numberOfChildrenStepper: UIStepper!
     
-    @IBOutlet weak var wifiSwitch: NSLayoutConstraint!
+    @IBOutlet weak var wifiSwitch: UISwitch!
     
     @IBOutlet weak var roomTypeLabel: UILabel!
     

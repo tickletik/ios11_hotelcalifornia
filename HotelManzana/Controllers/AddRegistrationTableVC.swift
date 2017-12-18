@@ -191,7 +191,7 @@ class AddRegistrationTableVC: UITableViewController, SelectRoomTypeDelegate {
         print("number of adults: \(numberOfAdults)")
         print("number of children: \(numberOfChildren)")
         
-        print("wifi on/off: \(wifiSwitch.isActive)")
+        print("wifi on/off: \(wifiSwitch.isOn)")
     }
     
     @IBAction func datePickerChanged(_ sender: UIDatePicker) {

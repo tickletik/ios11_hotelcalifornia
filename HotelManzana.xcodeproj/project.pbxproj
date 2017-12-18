@@ -14,6 +14,7 @@
 		E35B777B1FE1216300E6BBFC /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B777A1FE1216300E6BBFC /* Registration.swift */; };
 		E35B77841FE152E400E6BBFC /* AddRegistrationTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B77831FE152E400E6BBFC /* AddRegistrationTableVC.swift */; };
 		E3DA9E3E1FE6974D004E071C /* SelectRoomTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DA9E3D1FE6974D004E071C /* SelectRoomTypeVC.swift */; };
+		E3DA9E441FE7E939004E071C /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DA9E431FE7E939004E071C /* RegistrationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E35B777A1FE1216300E6BBFC /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		E35B77831FE152E400E6BBFC /* AddRegistrationTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistrationTableVC.swift; sourceTree = "<group>"; };
 		E3DA9E3D1FE6974D004E071C /* SelectRoomTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoomTypeVC.swift; sourceTree = "<group>"; };
+		E3DA9E431FE7E939004E071C /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				E3DA9E3D1FE6974D004E071C /* SelectRoomTypeVC.swift */,
 				E35B77831FE152E400E6BBFC /* AddRegistrationTableVC.swift */,
+				E3DA9E431FE7E939004E071C /* RegistrationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				E35B777B1FE1216300E6BBFC /* Registration.swift in Sources */,
 				E3DA9E3E1FE6974D004E071C /* SelectRoomTypeVC.swift in Sources */,
 				E35B77691FE1213F00E6BBFC /* AppDelegate.swift in Sources */,
+				E3DA9E441FE7E939004E071C /* RegistrationController.swift in Sources */,
 				E35B77841FE152E400E6BBFC /* AddRegistrationTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegistrationTableVC: UITableViewController, SelectRoomTypeDelegate {
+class AddRegistrationTableVC: UITableViewController, SelectRoomTypeDelegate {
     
     
     func didSelect(roomType: RoomType) {

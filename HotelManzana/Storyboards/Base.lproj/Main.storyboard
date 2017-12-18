@@ -430,6 +430,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="New Guest Registration" id="3SE-nf-asE">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cS3-1V-LsZ">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="A8S-AM-6Zb" id="Eyv-I3-QJ2"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="iTu-Kh-pjy">
                             <connections>
                                 <action selector="doneBarButtonTapped:" destination="A8S-AM-6Zb" id="gcK-eK-wsJ"/>
